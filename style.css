@@ -175,13 +175,13 @@ section .title::after{
     background-size: cover;
     background-attachment: fixed;
     font-family: 'Ubuntu', sans-serif;
+    
 }
-
 
 
 .home .max-width{
   width: 100%;
-  display: flex;
+ 
 }
 .home .max-width .row{
   margin-right: 0;
@@ -329,7 +329,7 @@ section .title::after{
     width: 70%;
 }
 .skills-content .right .js::before{
-    width: 50%;
+    width: 70%;
 }
 .skills-content .right .c::before{
     width: 60%;
@@ -344,6 +344,7 @@ section .title::after{
 .skills-content .right .dsa::before{
     width: 50%;
 }
+
 
 /* contact section styling */
 .contact .title::after{
