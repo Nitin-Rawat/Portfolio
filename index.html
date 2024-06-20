@@ -12,7 +12,36 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
-
+    <style>
+        .projects-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .project-item {
+            flex: 0 0 48%;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+        }
+        .project-item img {
+            max-width: 48%;
+            margin-right: 2%;
+            margin-bottom: 2%;
+            box-sizing: border-box;
+        }
+        .project-item img:last-child {
+            margin-right: 0;
+        }
+        @media (max-width: 768px) {
+            .project-item {
+                flex: 0 0 100%;
+            }
+            .project-item img {
+                max-width: 100%;
+                margin-right: 0;
+            }
+        }
+    </style>
 </head>
 <body>
 
@@ -26,9 +55,8 @@
             <ul class="menu">
                 <li><a href="#home" class="menu-btn">Home</a></li>
                 <li><a href="#about" class="menu-btn">About</a></li>
-                
                 <li><a href="#skills" class="menu-btn">Skills</a></li>
-                
+                <li><a href="#projects" class="menu-btn">Projects</a></li>
                 <li><a href="#contact" class="menu-btn">Contact</a></li>
             </ul>
             <div class="menu-btn">
@@ -44,11 +72,10 @@
                 <div class="text-1">Hello, my name is</div>
                 <div class="text-2">NITIN RAWAT</div>
                 <div class="text-3">And I'm a <span class="typing"></span></div>
-                <a >Hire me</a>
+                <a>Hire me</a>
             </div>
         </div>
     </section>
-
 
     <!-- about section start -->
     <section class="about" id="about">
@@ -60,15 +87,12 @@
                 </div>
                 <div class="column right">
                     <div class="text">I'm NITIN and I'm a <span class="typing-2"></span></div>
-                    <p>Hi, My name is NITIN RAWAT pursuing Btech CSE(AIML) from QUANTUM UNIVERSITY ROORKEE. I am a Fresher who eagerly want to lern various new things which helps me to grow in my carrer.</p>
-                    <!-- <a href="#">Download CV</a> -->
-                    <a href="NITIN_Resume.docx" download>Download CV</a>
+                    <p>Hi, My name is NITIN RAWAT pursuing Btech CSE(AIML) from QUANTUM UNIVERSITY ROORKEE. I am a Fresher who eagerly want to learn various new things which helps me to grow in my career.</p>
+                    <a href="NITIN_Resume_.pdf" download>Download CV</a>
                 </div>
             </div>
         </div>
     </section> 
-
-    
 
     <!-- skills section start -->
     <section class="skills" id="skills">
@@ -77,7 +101,7 @@
             <div class="skills-content">
                 <div class="column left">
                     <div class="text">My creative skills & experiences.</div>
-                    <p>I am very creative person thats why i am making Website to showcase my Creative. I don't have corporate experience but i will gradually learn all of it.</p>
+                    <p>I am very creative person that's why I am making Website to showcase my Creativity. I don't have corporate experience but I will gradually learn all of it.</p>
                     <a href="#">Thank-YOU</a>
                 </div>
                 <div class="column right">
@@ -96,21 +120,17 @@
                         <div class="line css"></div>
                     </div>
                     <div class="bars">
-
-                          
-                    <div class="info">
-                        <span>JavaScript</span>
-                        <span>70%</span>
-                    </div>
-                    <div class="line js"></div>
-                        
+                        <div class="info">
+                            <span>JavaScript</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="line js"></div>
                     </div>
                     <div class="bars">
                         <div class="info">
                             <span>React</span>
                             <span>60%</span>
                         </div>
-                        
                         <div class="line python"></div>
                     </div>
                     <div class="bars">
@@ -120,7 +140,6 @@
                         </div>
                         <div class="line python"></div>
                     </div>
-
                     <div class="bars">
                         <div class="info">
                             <span>C/C++</span>
@@ -128,8 +147,6 @@
                         </div>
                         <div class="line c"></div>
                     </div>
-
-
                     <div class="bars">
                         <div class="info">
                             <span>DSA</span>
@@ -137,8 +154,6 @@
                         </div>
                         <div class="line dsa"></div>
                     </div>
-
-
                     <div class="bars">
                         <div class="info">
                             <span>SQL</span>
@@ -158,21 +173,51 @@
                             <span>WordPress</span>
                             <span>50%</span>
                         </div>
-                        <div class="line sql"></div>
+                        <div class=" line dsa"></div>
                     </div>
-                      
-                   <div class="bars">
+                    <div class="bars">
                         <div class="info">
                             <span>PHP</span>
                             <span>50%</span>
                         </div>
-                        <div class="line sql"></div>
+                        <div class="line dsa"></div>
                     </div>
-                  
                 </div>
             </div>
         </div>
     </section>
+
+
+    <!-- Projects Section Start -->
+<section class="projects" id="projects">
+    <div class="max-width">
+        <h2 class="title">My Projects</h2>
+        <div class="projects-content">
+            <!-- Project Item Start -->
+            <div class="project-item">
+                <h3>Lexi: Chatbot</h3>
+                <a href="https://nitin-rawat.github.io/LEXI/" target="_blank">Visit Project</a>
+                <div class="project-images">
+                    <img src="lEXI-1.jpg" alt="Lexi Chatbot Screenshot 1">
+                    <img src="lEXI-2.jpg" alt="Lexi Chatbot Screenshot 2">
+                </div>
+            </div>
+            <!-- Project Item End -->
+            
+            <!-- Project Item Start -->
+            <div class="project-item">
+                <h3>Sales Dashboard</h3>
+                <a href="https://nitin-rawat.github.io/SalesDashboard" target="_blank">Visit Project</a>
+                <div class="project-images">
+                    <img src="SD-1.jpg" alt="Sales Dashboard Screenshot 1">
+                    <img src="SD-2.jpg" alt="Sales Dashboard Screenshot 2">
+                </div>
+            </div>
+            <!-- Project Item End -->
+        </div>
+    </div>
+</section>
+<!-- Projects Section End -->
 
     <!-- contact section start -->
     <section class="contact" id="contact">
@@ -181,7 +226,7 @@
             <div class="contact-content">
                 <div class="column left">
                     <div class="text">Get in Touch</div>
-                    <p>I have left my contact details below if want to contact me you can reach out me through the followings.</p>
+                    <p>I have left my contact details below if you want to contact me you can reach out to me through the followings.</p>
                     <div class="icons">
                         <div class="row">
                             <i class="fas fa-user"></i>
@@ -208,11 +253,11 @@
                 </div>
                 <div class="column right">
                     <div class="text">Message me</div>
-                    <form  action="https://api.web3forms.com/submit" method="POST">
+                    <form action="https://api.web3forms.com/submit" method="POST">
                         <input type="hidden" name="access_key" value="2ed9706c-cd3b-4122-b696-d793585913ae">
                         <div class="fields">
                             <input class="field name" type="text" name="name" placeholder="Your Name" required>
-                            <input class="field name" type="email" name="email" placeholder="Email" required>
+                            <input class="field email" type="email" name="email" placeholder="  Email" required>
                         </div>
                         <div class="field">
                             <input type="text" name="subject" placeholder="Subject" required>
@@ -231,7 +276,7 @@
 
     <!-- footer section start -->
     <footer>
-        <span>Created By <B>NITIN</B>  </span>
+        <span>Created By <b>NITIN</b></span>
     </footer>
 
     <script src="script.js"></script>
